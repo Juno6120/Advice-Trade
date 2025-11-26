@@ -1,0 +1,27 @@
+<%-include ("partials/header.ejs") %>
+
+<body>
+  <h1>Hello!</h1>
+
+    <a href = "/get-advice">
+  <div class="card">
+    <% if (locals.advice) { %>
+    <p>
+      <%= advice %>
+    </p>
+    <% } else {%>
+    <p>
+      Hi! Click me for some inspiration!
+    </p>
+        <% } %>
+  </div>  
+  </a>
+
+</br>
+  <a href = "/register"><button class="btn">Trade advice?</button></a>
+</body>
+
+
+</html>
+
+
